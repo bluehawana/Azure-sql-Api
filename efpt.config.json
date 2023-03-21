@@ -1,0 +1,173 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "AdventureWorks2019Context",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "AutoApiProject",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[HumanResources].[Department]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[Employee]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[EmployeeDepartmentHistory]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[EmployeePayHistory]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[JobCandidate]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[Shift]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[Address]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[AddressType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[BusinessEntity]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[BusinessEntityAddress]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[BusinessEntityContact]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[ContactType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[CountryRegion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[EmailAddress]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[Password]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[Person]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[PersonPhone]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[PhoneNumberType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Person].[StateProvince]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Purchasing].[ProductVendor]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Purchasing].[PurchaseOrderDetail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Purchasing].[PurchaseOrderHeader]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Purchasing].[ShipMethod]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[Purchasing].[Vendor]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[HumanResources].[vEmployee]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[HumanResources].[vEmployeeDepartment]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[HumanResources].[vEmployeeDepartmentHistory]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[HumanResources].[vJobCandidate]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[HumanResources].[vJobCandidateEducation]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[HumanResources].[vJobCandidateEmployment]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[Person].[vAdditionalContactInfo]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[Person].[vStateProvinceCountryRegion]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[Purchasing].[vVendorWithAddresses]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[Purchasing].[vVendorWithContacts]",
+         "ObjectType": 3
+      }
+   ],
+   "UiHint": "apitester.AdventureWorks2019",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
