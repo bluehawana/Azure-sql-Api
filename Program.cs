@@ -1,4 +1,6 @@
 using AutoApiProject.Data;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,8 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AdventureWorks2019Context>(o => o.UseSqlServer(connString));
+var keyVaultEndpoint = new Uri(builder.Configuration["VaultKey"]);
+var secretClient = new SecretClient(keyVaultEndpoint, new DefaultAzureCredential());
+
+KeyVaultSecret kvs = secretClient.GetSecret("autodemon");
+builder.Services.AddDbContext<AdventureWorks2019Context>(o => o.UseSqlServer(kvs.Value));
+
+//var secbuilder.Services.AddDbContext<AdventureWorks2019Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AdventureWorks2019ContextConnection")));
 
 var app = builder.Build();
 
@@ -19,7 +26,7 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 //new commnet 
-
+ 
 app.UseHttpsRedirection();
 
 app.MapGet("api/person", async ([FromServices] AdventureWorks2019Context db) =>
